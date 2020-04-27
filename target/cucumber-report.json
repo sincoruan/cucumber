@@ -1,0 +1,929 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "arguments test",
+        "description": "",
+        "id": "arguments;arguments-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1064562900,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the name is \"alex\" and age is 34",
+            "match": {
+              "arguments": [
+                {
+                  "val": "alex",
+                  "offset": 13
+                },
+                {
+                  "val": "34",
+                  "offset": 30
+                }
+              ],
+              "location": "ArgumentStepdefs.theNameIsAndAgeIs(String,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "format the input",
+            "match": {
+              "location": "ArgumentStepdefs.formatTheInput()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 155800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the format string is alex-34",
+            "match": {
+              "arguments": [
+                {
+                  "val": "34",
+                  "offset": 26
+                }
+              ],
+              "location": "ArgumentStepdefs.theFormatStringIsAlex(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Arguments",
+    "description": "",
+    "id": "arguments",
+    "keyword": "Feature",
+    "uri": "com/practice/chapter01/arguments.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "multiple then keyword",
+        "description": "",
+        "id": "complex-data-type;multiple-then-keyword",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 103300,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user account information",
+            "match": {
+              "location": "ComplexDataTypeStepDefs.theUserAccountInformation()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1198200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "we can found user \"Alex\" with password \"123456\" ,phone \"345345\" exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Alex",
+                  "offset": 19
+                },
+                {
+                  "val": "123456",
+                  "offset": 40
+                },
+                {
+                  "val": "345345",
+                  "offset": 56
+                }
+              ],
+              "location": "ComplexDataTypeStepDefs.weCanFoundUserWithPasswordPhoneExists(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3840200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "we can found user \"Alex\" with password \"123456\" ,phone \"345345\" exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Alex",
+                  "offset": 19
+                },
+                {
+                  "val": "123456",
+                  "offset": 40
+                },
+                {
+                  "val": "345345",
+                  "offset": 56
+                }
+              ],
+              "location": "ComplexDataTypeStepDefs.weCanFoundUserWithPasswordPhoneExists(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 435300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "we can found user \"Alex\" with password \"123456\" ,phone \"345345\" exists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Alex",
+                  "offset": 19
+                },
+                {
+                  "val": "123456",
+                  "offset": 40
+                },
+                {
+                  "val": "345345",
+                  "offset": 56
+                }
+              ],
+              "location": "ComplexDataTypeStepDefs.weCanFoundUserWithPasswordPhoneExists(String,String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "use complex data type",
+        "description": "",
+        "id": "complex-data-type;use-complex-data-type",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 65500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user account infomation",
+            "match": {
+              "location": "ComplexDataTypeStepDefs.theUserAccountInfomation()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 437658100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "we verify following user exsits",
+            "match": {
+              "location": "ComplexDataTypeStepDefs.weVerifyFollowingUserExsits(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "email",
+                  "phone"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "Alex",
+                  "123456",
+                  "345345"
+                ],
+                "line": 11
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Complex Data type",
+    "description": "",
+    "id": "complex-data-type",
+    "keyword": "Feature",
+    "uri": "com/practice/chapter01/complex-data-type.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "simple scenario",
+        "description": "multiple pre-conditions\r\nmultiple user action\r\nmultiple expected output",
+        "id": "test-multiple-conditions\u0026action;simple-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 102500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "ruanxk open the url of git",
+            "match": {
+              "location": "MultipleWithAddAndBut.ruanxkOpenTheUrlOfGit()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "ruanxk open the url of jenkins",
+            "match": {
+              "location": "MultipleWithAddAndBut.ruanxkOpenTheUrlOfJenkins()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "ruanxk click build job button",
+            "match": {
+              "location": "MultipleWithAddAndBut.ruanxkClickBuildJobButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "ruanxk the job will be started",
+            "match": {
+              "location": "MultipleWithAddAndBut.ruanxkTheJobWillBeStarted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "ruanxk click the job id link",
+            "match": {
+              "location": "MultipleWithAddAndBut.ruanxkClickTheJobIdLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "ruanxk choice the job console",
+            "match": {
+              "location": "MultipleWithAddAndBut.ruanxkChoiceTheJobConsole()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "ruanxk click into the console page",
+            "match": {
+              "location": "MultipleWithAddAndBut.ruanxkClickIntoTheConsolePage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 33100,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "ruanxk the job building log will be print",
+            "match": {
+              "location": "MultipleWithAddAndBut.ruanxkTheJobBuildingLogWillBePrint()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 40500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "ruanxk the last job can see successfully state",
+            "match": {
+              "location": "MultipleWithAddAndBut.ruanxkTheLastJobCanSeeSuccessfullyState()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 135100,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "ruanxk the job will not running at current",
+            "match": {
+              "location": "MultipleWithAddAndBut.ruanxkTheJobWillNotRunningAtCurrent()"
+            },
+            "keyword": "But "
+          }
+        ]
+      }
+    ],
+    "name": "test multiple conditions\u0026action",
+    "description": "simple test\r\nwithout add and but keywords",
+    "id": "test-multiple-conditions\u0026action",
+    "keyword": "Feature",
+    "uri": "com/practice/chapter01/multiple-precondition-action-expected-with-add-but.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "simple scenario",
+        "description": "multiple pre-conditions\r\nmultiple user action\r\nmultiple expected output",
+        "id": "test-multiple-conditions\u0026action;simple-scenario",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 224300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "uesr open the url of git",
+            "match": {
+              "location": "MultipleWithoutAddAndBut.uesr_open_the_url_of_git()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2194700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user open the url of jenkins",
+            "match": {
+              "location": "MultipleWithoutAddAndBut.user_open_the_url_of_jenkins()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 139200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click build job button",
+            "match": {
+              "location": "MultipleWithoutAddAndBut.click_build_job_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the job will be started",
+            "match": {
+              "location": "MultipleWithoutAddAndBut.the_job_will_be_started()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 184900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click the job id link",
+            "match": {
+              "location": "MultipleWithoutAddAndBut.click_the_job_id_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 141200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "choice the job console",
+            "match": {
+              "location": "MultipleWithoutAddAndBut.choice_the_job_console()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 252100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click into the console page",
+            "match": {
+              "location": "MultipleWithoutAddAndBut.click_into_the_console_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 360500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the job building log will be print",
+            "match": {
+              "location": "MultipleWithoutAddAndBut.the_job_building_log_will_be_print()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 117300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the last job can see successfully state",
+            "match": {
+              "location": "MultipleWithoutAddAndBut.the_last_job_can_see_successfully_state()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "test multiple conditions\u0026action",
+    "description": "simple test\r\nwithout add and but keywords",
+    "id": "test-multiple-conditions\u0026action",
+    "keyword": "Feature",
+    "uri": "com/practice/chapter01/multiple-precondition-action-expected-without-add-but.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "x and y value",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "line": 3,
+        "name": "Add",
+        "description": "",
+        "id": "multiple-scenario-without-background;add",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 134000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "add operation background",
+            "match": {
+              "location": "MultipleScenarioWithBackground.addOperationBackground()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 53000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "invoke calculator button background",
+            "match": {
+              "location": "MultipleScenarioWithBackground.invokeCalculatorButtonBackground()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the result is x+y background",
+            "match": {
+              "location": "MultipleScenarioWithBackground.theResultIsXYBackground()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 2,
+        "name": "x and y value",
+        "description": "",
+        "type": "background",
+        "keyword": "Background"
+      },
+      {
+        "line": 7,
+        "name": "Minus",
+        "description": "",
+        "id": "multiple-scenario-without-background;minus",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 59300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "minus operation background",
+            "match": {
+              "location": "MultipleScenarioWithBackground.minusOperationBackground()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "invoke calculator button background",
+            "match": {
+              "location": "MultipleScenarioWithBackground.invokeCalculatorButtonBackground()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "the result is x-y background",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "multiple scenario without background",
+    "description": "",
+    "id": "multiple-scenario-without-background",
+    "keyword": "Feature",
+    "uri": "com/practice/chapter01/multiple-scenario-with-background.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Add",
+        "description": "",
+        "id": "multiple-scenario-without-background;add",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 97000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "x and y value",
+            "match": {
+              "location": "MultipleScenarioWithoutBackground.xAndYValue()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "add operation",
+            "match": {
+              "location": "MultipleScenarioWithoutBackground.addOperation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "invoke calculator button",
+            "match": {
+              "location": "MultipleScenarioWithoutBackground.invokeCalculatorButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 93100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the result is x+y",
+            "match": {
+              "location": "MultipleScenarioWithoutBackground.theResultIsXY()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Minus",
+        "description": "",
+        "id": "multiple-scenario-without-background;minus",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 64300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "x and y value",
+            "match": {
+              "location": "MultipleScenarioWithoutBackground.xAndYValue()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "minus operation",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "invoke calculator button",
+            "match": {
+              "location": "MultipleScenarioWithoutBackground.invokeCalculatorButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "the result is x-y",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "multiple scenario without background",
+    "description": "",
+    "id": "multiple-scenario-without-background",
+    "keyword": "Feature",
+    "uri": "com/practice/chapter01/multiple-scenario-without-background.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "s1",
+        "description": "",
+        "id": "multiple-scenario;s1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "g1",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "w1",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "t1",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "s2",
+        "description": "",
+        "id": "multiple-scenario;s2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "g2",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "w2",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "t2",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "s3",
+        "description": "",
+        "id": "multiple-scenario;s3",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "g3",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "w3",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "t3",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Multiple Scenario",
+    "description": "",
+    "id": "multiple-scenario",
+    "keyword": "Feature",
+    "uri": "com/practice/chapter01/multiple-scenarios.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Addtion",
+        "description": "",
+        "id": "basic-add;addtion",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2484800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "x is 4 and y is 5",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 5
+                },
+                {
+                  "val": "5",
+                  "offset": 16
+                }
+              ],
+              "location": "CalculatorDef.xIsAndYIs(int,int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 344800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I invoke add method",
+            "match": {
+              "location": "CalculatorDef.iInvokeAddMethod()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15626900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the result is 9",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9",
+                  "offset": 14
+                }
+              ],
+              "location": "CalculatorDef.theResultIs(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Basic Add",
+    "description": "",
+    "id": "basic-add",
+    "keyword": "Feature",
+    "uri": "com/practice/chapter01/testcalculator.feature"
+  }
+]
